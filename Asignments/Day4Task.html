@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <style>
+            canvas{background-color:red}
+            canvas{border: 5px;color: blue;}
+        </style>
+    </head>
+    <body>
+        <canvas id ='taskCanvas' width = '600' height="300" style="border: 2px solid;"></canvas>
+
+        <script>
+            var taskScript = document.getElementById('taskCanvas');
+            var tsColour = taskScript.getContext("2d");
+            tsColour.fillStyle = '#00FF00';
+            tsColour.fillRect(150,75,300,150)
+        </script>
+        <h2>Colour</h2>
+        <p>Select your Colour</p>
+        <input list="Colour">
+        <datalist id="Colour">
+            <option value="Blue"/>
+            <option value="Green"/>
+            <option value="Brown"/>
+            <option value="Aqua"/>
+        </datalist>
+    </body>
+</html>
