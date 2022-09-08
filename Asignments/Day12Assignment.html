@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <style>
+            div.one{
+                width: 200px;
+                height: 200px;
+                background-color: blueviolet;
+                animation-name: test;
+                animation-duration: 5s;
+                animation-delay: 4s;
+                animation-direction: alternate-reverse;
+                animation-fill-mode: backwards;
+                animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+                animation-iteration-count: 3;
+
+            }
+            @keyframes test {
+                from{background-color: blueviolet;}  
+                to{background-color: blanchedalmond;} 
+
+            }
+            div.two{
+                width: 100px;
+                height: 100px;
+                background-color: brown;
+                animation-name: testOne;
+                animation-duration: 2s;
+                animation-delay: 3s;
+                animation-direction: alternate-reverse;
+                animation-iteration-count: 3;
+            }
+            @keyframes testOne {
+                0%{background-color: antiquewhite;}
+                25%{background-color: aqua;}
+                50%{background-color: aquamarine;}
+                100%{background-color: azure;}
+            }
+            div.movingObject{
+                width: 200px;
+                height: 200px;
+                background-color: azure;
+                animation: movingAnime 5s ease-in 4s infinite alternate-reverse forwards;
+            }
+            @keyframes movingAnime {
+                
+            }
+        </style>
+    </head>
+    <body>
+        <p>It may not work in some Browswer</p>
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="movingObject"></div>
+    </body>
+</html>
